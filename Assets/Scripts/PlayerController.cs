@@ -14,7 +14,8 @@ public class PlayerController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		anim = this.GetComponent<Animator>();
-		facingRight = true;
+		facingRight = false;
+		Flip ();
 	}
 
 	void Update() {

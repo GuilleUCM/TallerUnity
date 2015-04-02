@@ -4,11 +4,12 @@ using System.Collections;
 public class SmoothFollow2D : MonoBehaviour {
 
     //offset from the viewport center to fix damping
-    public float m_DampTime = 0.3f;
+    public float m_DampTime = 10f;
     public Transform m_Target;
     public float m_XOffset = 0;
     public float m_YOffset = 0;
-    private Vector3 m_Velocity = Vector3.zero;
+
+	private float margin = 0.1f;
 
 	void Start () {
 		if (m_Target==null){
@@ -18,10 +19,16 @@ public class SmoothFollow2D : MonoBehaviour {
 
     void Update() {
         if(m_Target) {
-            Vector3 point = camera.WorldToViewportPoint(m_Target.position);
-            Vector3 delta = m_Target.position - camera.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, point.z));
-			Vector3 destination = transform.position + delta;
-            transform.position = Vector3.SmoothDamp(transform.position, destination, ref m_Velocity, m_DampTime) + new Vector3(m_XOffset,m_YOffset,0);
+			float targetX = m_Target.position.x + m_XOffset;
+			float targetY = m_Target.position.y + m_YOffset;
+
+			if (Mathf.Abs(transform.position.x - targetX) > margin)
+				targetX = Mathf.Lerp(transform.position.x, targetX, 1/m_DampTime * Time.deltaTime);
+
+			if (Mathf.Abs(transform.position.y - targetY) > margin)
+				targetY = Mathf.Lerp(transform.position.y, targetY, m_DampTime * Time.deltaTime);
+            
+			transform.position = new Vector3(targetX, targetY, transform.position.z);
         }
     }
 }
