@@ -53,4 +53,5 @@ public class PlayerController : MonoBehaviour {
 		facingRight = !facingRight;
 
 		transform.rotation = Quaternion.LookRotation(v);
+		//rigidbody2D.MoveRotation(180);
 	}}

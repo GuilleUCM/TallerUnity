@@ -26,7 +26,7 @@ public class SmoothFollow2D : MonoBehaviour {
 				targetX = Mathf.Lerp(transform.position.x, targetX, 1/m_DampTime * Time.deltaTime);
 
 			if (Mathf.Abs(transform.position.y - targetY) > margin)
-				targetY = Mathf.Lerp(transform.position.y, targetY, m_DampTime * Time.deltaTime);
+				targetY = Mathf.Lerp(transform.position.y, targetY, 1/m_DampTime * Time.deltaTime);
             
 			transform.position = new Vector3(targetX, targetY, transform.position.z);
         }
