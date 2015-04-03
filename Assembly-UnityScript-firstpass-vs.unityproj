@@ -5,11 +5,11 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{87044ACA-C9F0-8A32-87AD-85B21BE1C61A}</ProjectGuid>
+	<ProjectGuid>{EB0E5FF6-174F-BA3D-DAAF-4A590B018674}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
-	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<AssemblyName>Assembly-UnityScript-firstpass</AssemblyName>
 	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
 	<FileAlignment>512</FileAlignment>
 	<BaseDirectory>Assets</BaseDirectory>
@@ -46,24 +46,8 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\ChangeScene.cs" />
-     <Compile Include="Assets\Scripts\AttachPlatform.cs" />
-     <Compile Include="Assets\Scripts\CameraFollow.cs" />
-     <Compile Include="Assets\Scripts\DamageCollider.cs" />
-     <Compile Include="Assets\Scripts\DeathTrigger.cs" />
-     <Compile Include="Assets\Scripts\DestroyBelowHeight.cs" />
-     <Compile Include="Assets\Scripts\DestroyMeteor.cs" />
-     <Compile Include="Assets\Scripts\EnemySpawner.cs" />
-     <Compile Include="Assets\Scripts\FollowPlayer.cs" />
-     <Compile Include="Assets\Scripts\Healthbar.cs" />
-     <Compile Include="Assets\Scripts\PickItem.cs" />
-     <Compile Include="Assets\Scripts\PlatformMover.cs" />
-     <Compile Include="Assets\Scripts\PlayerController.cs" />
-     <Compile Include="Assets\Scripts\RespawnOnDeath.cs" />
-     <Compile Include="Assets\Scripts\Score.cs" />
-     <Compile Include="Assets\Scripts\ScoreItem.cs" />
-     <Compile Include="Assets\Scripts\SmoothFollow2D.cs" />
-     <Compile Include="Assets\Scripts\UnityPlayerControl.cs" />
+     <Compile Include="Assets\Standard Assets\Particles\Legacy Particles\TimedObjectDestructor.js" />
+     <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.3/UnityEngine.UI.dll</HintPath>
  </Reference>
