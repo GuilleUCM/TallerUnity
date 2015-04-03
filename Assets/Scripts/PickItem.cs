@@ -3,13 +3,13 @@ using System.Collections;
 
 public class PickItem : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+	public float m_score = 100f;
 	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+	public void OnTriggerEnter2D(Collider2D col)
+	{
+		if (col.transform.CompareTag("Player")) {
+			col.SendMessage("AddScore", m_score);
+			Destroy(gameObject);
+		}
 	}
 }
