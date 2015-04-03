@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\DamageCollider.cs" />
      <Compile Include="Assets\Scripts\DeathTrigger.cs" />
      <Compile Include="Assets\Scripts\DestroyBelowHeight.cs" />
+     <Compile Include="Assets\Scripts\DestroyMeteor.cs" />
      <Compile Include="Assets\Scripts\EnemySpawner.cs" />
      <Compile Include="Assets\Scripts\FollowPlayer.cs" />
      <Compile Include="Assets\Scripts\Healthbar.cs" />
