@@ -23,6 +23,7 @@ public class RespawnOnDeath : MonoBehaviour {
 //			gameObject.transform.parent = root.transform;
 //		else 
 //			gameObject.transform.parent = null;
+		gameObject.SendMessage("SaveScore", SendMessageOptions.DontRequireReceiver);
 		Application.LoadLevel(0);
 	}
 }

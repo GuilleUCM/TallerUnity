@@ -7,7 +7,7 @@ public class Score : MonoBehaviour {
 	public GUISkin m_skin;
 	public Vector2 m_offset;
 	public Vector2 m_size;
-	private float m_score = 0;
+	private int m_score = 0;
 	
 	void OnGUI()
 	{
@@ -18,14 +18,22 @@ public class Score : MonoBehaviour {
 	
 	}
 	
-	void AddScore(float f)
+	void AddScore(int f)
 	{
 		m_score += f;
 	}
 	
-	void SetScore(float f)
+	void SetScore(int f)
 	{
 		m_score = f;
+	}
+
+	void SaveScore() {
+		int highscore = PlayerPrefs.GetInt("HighScore",0);
+		if (m_score > highscore) {
+			PlayerPrefs.SetInt("HighScore", m_score);
+
+		}
 	}
 	
 	
