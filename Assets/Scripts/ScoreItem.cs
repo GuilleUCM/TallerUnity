@@ -9,7 +9,7 @@ public class ScoreItem : MonoBehaviour {
 	public void OnTriggerEnter2D(Collider2D col)
 	{
 		if (col.transform.CompareTag("Player")) {
-			col.SendMessage("AddScore", m_score);
+			col.SendMessage("AddScore", m_score, SendMessageOptions.DontRequireReceiver);
 			Destroy(gameObject);
 		}
 	}

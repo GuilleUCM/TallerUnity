@@ -46,10 +46,9 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\ChangeScene.cs" />
-     <Compile Include="Assets\Scoring.cs" />
      <Compile Include="Assets\Scripts\AttachPlatform.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
+     <Compile Include="Assets\Scripts\ChangeScene.cs" />
      <Compile Include="Assets\Scripts\DamageCollider.cs" />
      <Compile Include="Assets\Scripts\DeathTrigger.cs" />
      <Compile Include="Assets\Scripts\DestroyBelowHeight.cs" />
@@ -57,12 +56,14 @@
      <Compile Include="Assets\Scripts\EnemySpawner.cs" />
      <Compile Include="Assets\Scripts\FollowPlayer.cs" />
      <Compile Include="Assets\Scripts\Healthbar.cs" />
+     <Compile Include="Assets\Scripts\LoadLevel.cs" />
      <Compile Include="Assets\Scripts\PickItem.cs" />
      <Compile Include="Assets\Scripts\PlatformMover.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\RespawnOnDeath.cs" />
      <Compile Include="Assets\Scripts\Score.cs" />
      <Compile Include="Assets\Scripts\ScoreItem.cs" />
+     <Compile Include="Assets\Scripts\Scoring.cs" />
      <Compile Include="Assets\Scripts\SmoothFollow2D.cs" />
      <Compile Include="Assets\Scripts\UnityPlayerControl.cs" />
  <Reference Include="UnityEngine.UI">
