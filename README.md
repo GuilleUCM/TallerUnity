@@ -12,7 +12,7 @@ En la sección de [Releases](https://github.com/GuilleUCM/TallerUnity/releases) 
 
 #### Bug detectado
 
-Se ha detectado un pequeño error en el script [ScoreItem.cs](https://github.com/GuilleUCM/TallerUnity/blob/master/Assets/Scripts/ScoreItem.cs) de las releases, de modo que al intentar añadirlo a los cristales muestra un mensaje de error. El error está corregido dentro del trunk del proyecto y se puede solucionar fácilmente sustituyendo en la línea 4:
+Se ha detectado un pequeño error en las releases, en el script [ScoreItem.cs](https://github.com/GuilleUCM/TallerUnity/blob/master/Assets/Scripts/ScoreItem.cs), de modo que al intentar añadirlo a los cristales muestra un mensaje de error. El error está corregido dentro del trunk del proyecto y se puede solucionar fácilmente sustituyendo en la línea 4 del script:
 
 ```
 [RequireComponent (typeof (Collider))]
