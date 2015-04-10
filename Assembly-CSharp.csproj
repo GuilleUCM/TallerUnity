@@ -55,7 +55,6 @@
      <Compile Include="Assets\Scripts\FollowPlayer.cs" />
      <Compile Include="Assets\Scripts\Healthbar.cs" />
      <Compile Include="Assets\Scripts\LoadLevel.cs" />
-     <Compile Include="Assets\Scripts\PickItem.cs" />
      <Compile Include="Assets\Scripts\PlatformMover.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\RespawnOnDeath.cs" />
