@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-[RequireComponent (typeof (Collider))]
+[RequireComponent (typeof (Collider2D))]
 public class ScoreItem : MonoBehaviour {
 	
 	public float m_score = 100f;
