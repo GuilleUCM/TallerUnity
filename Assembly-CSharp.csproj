@@ -48,7 +48,6 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\AttachPlatform.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
-     <Compile Include="Assets\Scripts\ChangeScene.cs" />
      <Compile Include="Assets\Scripts\DamageCollider.cs" />
      <Compile Include="Assets\Scripts\DeathTrigger.cs" />
      <Compile Include="Assets\Scripts\DestroyBelowHeight.cs" />

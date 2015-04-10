@@ -28,13 +28,4 @@ public class Score : MonoBehaviour {
 		m_score = f;
 	}
 
-	void SaveScore() {
-		int highscore = PlayerPrefs.GetInt("HighScore",0);
-		if (m_score > highscore) {
-			PlayerPrefs.SetInt("HighScore", m_score);
-
-		}
-	}
-	
-	
 }

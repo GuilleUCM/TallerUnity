@@ -17,13 +17,11 @@ public class RespawnOnDeath : MonoBehaviour {
 	}
 
 	public void OnDeath() {
-//		gameObject.transform.position = spawnPoint.position;
-//		GameObject root = GameObject.FindGameObjectWithTag("Root");
-//		if (root!=null)
-//			gameObject.transform.parent = root.transform;
-//		else 
-//			gameObject.transform.parent = null;
-		gameObject.SendMessage("SaveScore", SendMessageOptions.DontRequireReceiver);
-		Application.LoadLevel(0);
+		gameObject.transform.position = spawnPoint.position;
+		GameObject root = GameObject.FindGameObjectWithTag("Root");
+		if (root!=null)
+			gameObject.transform.parent = root.transform;
+		else 
+			gameObject.transform.parent = null;
 	}
 }
